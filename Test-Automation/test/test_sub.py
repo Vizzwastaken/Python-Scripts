@@ -15,7 +15,7 @@ path = os.path.dirname(os.path.normpath(current_directory))
 sys.path.append(path)
 
 # Import the add function from the 'calculator' module located in the parent directory
-from calculator import add
+from calculator import subtract
 
 print("----------------------------------------------------------------------")
 print("Running subtracttion test")

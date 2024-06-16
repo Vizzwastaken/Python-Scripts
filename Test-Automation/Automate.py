@@ -2,14 +2,15 @@ import os
 
 # Get the current working directory
 current_directory = os.getcwd()
-
+print(current_directory)
 # Store the current directory in a variable for clarity
 folder = current_directory
 
 # Traverse through all directories and files starting from 'folder'
 for dirpath, subdir, files in os.walk(folder):
+    print(dirpath)
     # Print the current directory path
-    if dirpath != '.':
+    if dirpath != current_directory:
         print(dirpath)
         
         # Change the current working directory to 'dirpath'
