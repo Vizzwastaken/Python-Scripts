@@ -2,7 +2,11 @@
 
 import unittest
 import sys
-sys.path.append('/root/project/')
+import os
+current_directory = os.getcwd()
+print(current_directory)
+path = os.path.dirname(os.path.normpath(current_directory))
+sys.path.append(path)
 print("----------------------------------------------------------------------")
 print("Running subtracttion test")
 print("----------------------------------------------------------------------")
