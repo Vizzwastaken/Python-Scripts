@@ -1,6 +1,7 @@
 import os
 
-folder = "."
+current_directory = os.getcwd()
+folder = current_directory
 for dirpath, subdir, files in os.walk(folder):
     if dirpath != '.':
         print(dirpath)
